@@ -1,0 +1,23 @@
+TestNG
+
+@Test
+    -we write every function with this annotation for execution in testing
+@BeforeMethod
+    -we use this annotation for pre conditions which executes before every function
+@AfterMethod
+    -we use this annotation for post conditions which executes after every function
+@BeforeClass
+    -we use this annotation for the conditions which executes before every class
+@AfterClass
+    -we use this annotation for the conditions which executes after every class
+
+    open the browser
+    JIRA
+    US 123456- valid login test for hrm application
+    Launch the application on the browser
+    Enter username and password
+    Click on login button
+    verify xyz icon on the homepage
+
+   close the browser
+

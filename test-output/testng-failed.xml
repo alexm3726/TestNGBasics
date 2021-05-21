@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test thread-count="5" name="TestNGBasics(failed)">
+    <classes>
+      <class name="Class02.HW.Task">
+        <methods>
+          <include name="LogIn"/>
+          <include name="browserLaunch"/>
+          <include name="addEmployee"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Class02.HW.Task -->
+    </classes>
+  </test> <!-- TestNGBasics(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

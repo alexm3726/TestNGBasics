@@ -1,0 +1,22 @@
+RECAP
+
+TestNG
+    - TestNG is annotation based too/framework
+
+    @Test- it takes out function/method as a test
+        Testing  has annotations for preconditions and for post conditions
+        Testing has annotation @Before for all preconditions (@BeforeMethod @BeforeClass)
+        Testing has annotation @Aefore for all preconditions (@AfterMethod @AfterClass)
+
+
+        TC 2:
+
+        Go to "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login
+        Enter valid username
+        -
+        Username -> Admin
+        Password -> Hum@nhrm123
+        -
+        Enter valid username
+        Leave field empty
+        verify error message with test password cannot be empty is displayed
