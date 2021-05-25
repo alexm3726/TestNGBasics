@@ -8,11 +8,11 @@ public class PriorityBatch9 {
     public void logOutMetghod(){
         System.out.println("This execution should come third");
     }
-    @Test(priority = 1)
+    @Test(priority = 1, groups = "smoke")
     public void logInMethod(){
         System.out.println("This execution should come first");
     }
-    @Test(priority = 2)
+    @Test(priority = 2,groups = "smoke")
     public void credentialsMethod(){
         System.out.println("This execution should come second");
     }

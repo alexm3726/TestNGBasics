@@ -1,0 +1,40 @@
+Assertions
+
+    Hard Assertions-
+        If assertions found an error, our code will stop and
+        the rest of the code will not run and will throw an exception
+
+    Soft Assertions-
+        It allows you us to execute our entire code and shows the result of all
+        the failures in a report
+
+        We use assertAll() to collect all the failures in the end.
+
+
+    Enable and Disable
+
+TestNG.xml
+       Method wise execution and configuration of the xml file
+       Class wise execution
+       Package wise execution
+
+
+allways run
+emailable report- listener
+dataprovider
+
+HW
+HRMS Add Employee Task
+1. Open chrome browser
+2. Go to hrms
+3. Login to application
+4. Add 5 different employees and create login
+credentials by providing :
+first name
+last name
+username
+password
+5. Verify employee has been added successfully
+and take screenshot(you must take 5 different screen shots)
+6. Close the browsers
+7.Specify group for this test case and add it into specific suite and execute from XML file

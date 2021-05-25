@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/alex/IdeaProjects/TestNGBasics">
+        <classes>
+
+            <class name="Class02.DependsOnAttribute"/>
+
+            <class name="Class02.EnableAndDisable"/>
+
+            <class name="Class01.Class01"/>
+
+            <class name="Class01.LoginTestBatch9"/>
+
+            <class name="Class01.tasks.Task1"/>
+
+            <class name="Class01.tasks.Task2"/>
+
+        </classes>
+    </test>
+</suite>

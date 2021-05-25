@@ -25,7 +25,7 @@ public class SoftAssertionsHRMS {
     @Test
     public void loginAndValidateTitle(){
 
-        String title = "Human Resource Management System";
+        String title = "Human Management System";
         String actualTitle = driver.getTitle();
         SoftAssert soft = new SoftAssert();
         soft.assertEquals(actualTitle, title);
@@ -38,7 +38,7 @@ public class SoftAssertionsHRMS {
         WebElement welcomeAttribute = driver.findElement(By.xpath("//*[text()='Welcome Admin']"));
 
         String receivedvalue = welcomeAttribute.getText();
-        String existedvalue = "Welcome Admin12345";
+        String existedvalue = "Welcome Admin";
 
         soft.assertEquals(receivedvalue, existedvalue);
         System.out.print("My test case is not working according to the user story");

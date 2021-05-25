@@ -36,7 +36,7 @@ public class HardAssertions {
         WebElement welcomeMessage= driver.findElement(By.xpath("//*[text()='Welcome Admin']"));
         Assert.assertTrue(welcomeMessage.isDisplayed());
         String textReceived= welcomeMessage.getText();
-        String actualText="Welcome Admin123";
+        String actualText="Welcome Admin";
         Assert.assertEquals(textReceived,actualText);
         System.out.println("My test case is passed and it is working fine");
 

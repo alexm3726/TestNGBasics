@@ -1,4 +1,4 @@
-package Class01;
+package Class03;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,16 +7,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginTestBatch9 {
+public class LoginTest {
 
     WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void openBrowserAndLaunchApp(){
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
         driver = new ChromeDriver();
@@ -26,7 +25,7 @@ public class LoginTestBatch9 {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
-    @Test
+    @Test(groups = "sprint2")
     public void validLogin(){
        /* WebElement username= driver.findElement(By.id("txtUsername"));
         username.sendKeys();
@@ -46,7 +45,7 @@ public class LoginTestBatch9 {
         }
     }
 
-    @Test
+    @Test(groups = "sprint1")
     public void validationOfTitle(){
         String expectedTitle="Human Management System";//failed on purpose
         String actualTitle=driver.getTitle();
@@ -58,7 +57,7 @@ public class LoginTestBatch9 {
             System.out.println("test is failed");
         }
     }
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown(){
         driver.quit();
     }
