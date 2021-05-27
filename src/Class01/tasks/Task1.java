@@ -21,12 +21,12 @@ public class Task1 {
         System.out.println("after every single test");
     }
 
-    @Test
+    @Test(groups = "sprint4")
     public void firstTest(){
         System.out.println("I am the first");
     }
 
-    @Test
+    @Test(groups = "sprint4")
     public void secondTest(){
         System.out.println("I am the second");
     }

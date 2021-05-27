@@ -21,11 +21,11 @@ public class Class01 {
         System.out.println("I am after method function which will execute before every test");
     }
 
-    @Test
+    @Test(groups = "sprint4")
     public void firstFunction(){
         System.out.println("I am first test");
     }
-    @Test
+    @Test(groups = "sprint4")
     public void secondFunction(){
         System.out.println("I am second test");
     }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+     <listeners>
+        <listener class-name="Class04.ListenersDemo"/>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="Test execution 1" parallel="methods" thread-count="3">
+        <classes>
+            <class name="Class04.ParallelTestDemo"/>
+        </classes>
+    </test>
+    <!--<test verbose="2" preserve-order="true" name="Test execution 2" parallel="methods" thread-count="2">
+        <classes>
+            <class name="Class01.Class01"/>
+        </classes>
+    </test>-->
+</suite>
